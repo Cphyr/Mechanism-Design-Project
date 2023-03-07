@@ -42,7 +42,7 @@ def exposure_trageted_utility(D, Q, j, k, a):
 
 def action_targeted_utility(D, Q, j, k, a):
     assert k == a[j]
-    return exposure_trageted_utility(D, Q, j, k, a) * Q[a[0], a[1]]
+    return exposure_trageted_utility(D, Q, j, k, a) * Q[j, k]
 
 
 def generate_graph(n, m, D, Q):
